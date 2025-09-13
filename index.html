@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальная пауза</title>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в мир музыки и Вайба</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#albums">Альбомы</a></li>
+                <li><a href="#artists">Исполнители</a></li>
+                <li><a href="#playlists">Плейлисты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Популярные треки</h2>
+            <div class="track">
+                <h3>Название трека 1</h3>
+                <p>Исполнитель: Артист 1</p>
+                <audio controls>
+                    <source src="track1.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент
+                </audio>
+            </div>
+            
+            <div class="track">
+                <h3>Название трека 2</h3>
+                <p>Исполнитель: Артист 2</p>
+                <audio controls>
+                    <source src="track2.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент
+                </audio>
+            </div>
+        </section>
+
+        <section id="albums">
+            <h2>Альбомы</h2>
+            <div class="album">
+                <h3>Название альбома 1</h3>
+                <p>Исполнитель: Артист 1</p>
+                <p>Год: 2025</p>
+            </div>
+            
+            <div class="album">
+                <h3>Название альбома 2</h3>
+                <p>Исполнитель: Артист 2</p>
+                <p>Год: 2025</p>
+            </div>
+        </section>
+
+        <section id="artists">
+            <h2>Исполнители</h2>
+            <div class="artist">
+                <h3>Артист 1</h3>
+                <p>Жанр: Поп</p>
+                <p>Альбомов: 3</p>
+            </div>
+            
+            <div class="artist">
+                <h3>Артист 2</h3>
+                <p>Жанр: Рок</p>
+                <p>Альбомов: 5</p>
+            </div>
+        </section>
+
+        <section id="playlists">
+            <h2>Плейлисты</h2>
+            <div class="playlist">
+                <h3>Лучшие хиты 2025</h3>
+                <p>Треков: 15</p>
+                <p>Длительность: 1ч 15м</p>
+            </div>
+            
+            <div class="playlist">
+                <h3>Расслабляющая </h3>
+                <p>Треков: 20</p>
+                <p>Длительность: 2ч 30м</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <form>
+                <div>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Музыкальный сайт. Все права защищены.</p>
+        <p>Email: ZhivoderovaAA23@rostov-don.ithub.ru </p>
+        <p>Телефон: +7 9883648986</p>
+    </footer>
+</body>
+</html>
