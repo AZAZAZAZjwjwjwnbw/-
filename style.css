@@ -1,0 +1,172 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a5acd, #8a2be2);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(106, 90, 205, 0.3);
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(106, 90, 205, 0.1);
+            border-left: 5px solid #9370db;
+        }
+
+        section h2 {
+            color: #6a5acd;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 2px solid #e6e6fa;
+            padding-bottom: 0.5rem;
+        }
+
+        .track, .album, .artist, .playlist {
+            background: #f8f6ff;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #ba55d3;
+            transition: transform 0.3s ease;
+        }
+
+        .track:hover, .album:hover, .artist:hover, .playlist:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(186, 85, 211, 0.2);
+        }
+
+        h3 {
+            color: #8a2be2;
+            margin-bottom: 0.5rem;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 1rem;
+            border-radius: 25px;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background: #e6e6fa;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form div {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #6a5acd;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #d8bfd8;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #9370db;
+            box-shadow: 0 0 5px rgba(147, 112, 219, 0.5);
+        }
+
+        button {
+            background: linear-gradient(135deg, #9370db, #ba55d3);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(147, 112, 219, 0.4);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #6a5acd, #8a2be2);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+   .Lady{
+    display: block;
+   }
+   .Lgaga{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   }
