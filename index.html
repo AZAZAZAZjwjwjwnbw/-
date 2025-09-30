@@ -26,8 +26,8 @@
             <div class="track">
                 <h3>Judas</h3>
                 <p>Исполнитель: Lady Gaga</p>
-               <div class="Lady"> <img class="Lgaga"   src="gaga.jpg" alt=""> <audio controls>
-                    <source src="track1.mp3" type="audio/mpeg">
+               <div class="Lady"> <img class="Lgaga"   src="gaga.jpg" alt=""> <audio controls class="audio-player">
+                    <source src="Lady_Gaga_-_Judas_48201167.mp3" type="audio/mpeg">
                     Ваш браузер не поддерживает аудио элемент
         
                 </audio></div>
@@ -36,25 +36,37 @@
             <div class="track">
                 <h3>Водяной</h3>
                 <p>Исполнитель: Король и шут</p>
-                <audio controls>
-                    <source src="track2.mp3" type="audio/mpeg">
+               <div class="Kish"> <img class="Korol" src="Korol-i-Shut-2048x1280.png" alt="">  <audio controls class="audio-player">
+                    <source src="Korol_i_SHut_-_Vodyanojj_62571817.mp3" type="audio/mpeg">
                     Ваш браузер не поддерживает аудио элемент
-                </audio>
+                </audio></div>
+            </div>
+
+              <div class="track">
+                <h3>Fine</h3>
+                <p>Исполнитель: Lemon Demon</p>
+               <div class="Lemon"> <img class="Demon" src="Fine.png" alt="">  <audio controls class="audio-player">
+                    <source src="Lemon_Demon_-_Fine_69624208.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент
+                </audio></div>
             </div>
         </section>
 
         <section id="albums">
             <h2>Альбомы</h2>
             <div class="album">
-                <h3>Название альбома 1</h3>
-                <p>Исполнитель: Артист 1</p>
-                <p>Год: 2025</p>
+                <div class="AlQ">
+                <img class="Queen" src="Q.jpg" alt="">
+                <h3>A night at the opera</h3>
+                <p>Группа: Queen</p>
+                <p>Год: 1975</p></div>
             </div>
             
             <div class="album">
-                <h3>Название альбома 2</h3>
-                <p>Исполнитель: Артист 2</p>
-                <p>Год: 2025</p>
+                <img class="Li" src="Lidia.jpeg" alt="">
+                <h3>Лидия</h3>
+                <p>Группа: ЭЛЕКТРОСЛАБОСТЬ </p>
+                <p>Год: 2020</p>
             </div>
         </section>
 
@@ -116,5 +128,31 @@
         <p>Email: </p>
         <p>Телефон: +7 9883648986</p>
     </footer>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioPlayers = document.querySelectorAll('.audio-player');
+            let currentlyPlaying = null;
+            audioPlayers.forEach(player => {
+                player.addEventListener('play', function() { 
+                    if (currentlyPlaying && currentlyPlaying !== this) {
+                        currentlyPlaying.pause();
+                        currentlyPlaying.currentTime = 0; 
+                    }
+                    currentlyPlaying = this;
+                });
+                player.addEventListener('ended', function() {
+                    if (currentlyPlaying === this) {
+                        currentlyPlaying = null;
+                    }
+                });
+                player.addEventListener('pause', function() {
+                    if (currentlyPlaying === this) {
+                        currentlyPlaying = null;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

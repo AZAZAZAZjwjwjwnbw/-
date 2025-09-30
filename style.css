@@ -170,3 +170,36 @@
     height: 50px;
     border-radius: 50%;
    }
+
+
+   .Korol{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   }
+   .Kish{ display: block;}
+   .Demon{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   }
+   .Lemon{
+    display: block;
+   }
+   .album img.Queen {
+    width: 150px;           
+    height: 150px;         
+    border-radius: 12px;    
+    object-fit: cover;      
+    display: block;
+}
+.AlQ{display: block;}
+
+.album img.Li{
+    width: 150px;           
+    height: 150px;         
+    border-radius: 12px;    
+    object-fit: cover;      
+    display: block;
+}
